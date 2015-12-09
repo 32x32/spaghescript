@@ -1,5 +1,5 @@
 ## SpagheScript
-Opensource SpagheScript for building an Anime and Manga website network for everywhere
+Opensource SpagheScript based CodeIgniter for building an Anime and Manga website network for everywhere
 
 ## Copyright and License
 Copyright 2015 Spaghetti-san

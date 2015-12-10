@@ -23,6 +23,7 @@
                 echo form_label('Title','title');
                 echo form_error('title');
                 echo form_input('title',set_value('title',$translation->title),'class="form-control"');
+                
                 ?>
             </div>
             <div class="row">

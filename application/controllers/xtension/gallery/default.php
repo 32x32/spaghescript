@@ -68,7 +68,7 @@ class Default extends Admin_Controller {
                     		];
                     $this->Gallery_model->create($data);
 					$this->session->set_flashdata('message','New image has been added..');
-					redirect('/admin/gallery');
+					redirect('/admin/xtension/gallery');
             }
 		}
 	}
@@ -127,7 +127,7 @@ class Default extends Admin_Controller {
 			
 			$this->Gallery_model->update($id,$data);
 			$this->session->set_flashdata('message','New image has been updated..');
-			redirect('/admin/gallery');
+			redirect('/admin/xtension/gallery');
 		}
 	}
 
@@ -136,6 +136,6 @@ class Default extends Admin_Controller {
 	{
 		$this->Gallery_model->delete($id);
 		$this->session->set_flashdata('message','Image has been deleted..');
-		redirect('/admin/gallery');
+		redirect('/admin/xtension/gallery');
 	}
 }

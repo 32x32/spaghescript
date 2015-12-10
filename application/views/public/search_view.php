@@ -1,6 +1,15 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');?>
- <div class="am-content" style="margin-left: 0;">
-        <div class="main-content">
+<div class="container" style="
+    margin-top: 40px;
+">
+  
+  
+<div class="stufftit" style="
+">
+<div class="stuffp" style="
+">latest pics</div>
+  </div>
+        <div class="panel main-content">
 
 <div align="center">
 Results 1 <?php echo $query->num_fields(); ?>

@@ -1,18 +1,30 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');?>
     <?php $this->load->helper(array('form', 'search')); ?>
  
-        <div class="am-content" style="margin-left: 0;">
-            <div class="main-content">
+        <div class="container" style="
+    margin-top: 40px;
+">
+  
+  
+<div class="stufftit" style="
+">
+<div class="stuffp" style="
+"> <?php if(!$search_terms == NULL) { ?>
+                                 <?php echo @$total_results; ?> result found for  <span
+                        
+class="text-navy">"<?php echo $search_terms; ?>"</span></small>
+							<?php } else {
+							echo "what are you looking for?"; 
+							}
+							?></div>
+  </div>
+        <div class="panel main-content" style="margin-bottom:20px">
 
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="ibox float-e-margins">
                             <div class="ibox-content">
-                            <?php if(!$search_terms == NULL) { ?>
-                                <h2> <?php echo @$total_results; ?> result found for  <span
                         
-class="text-navy">"<?php echo $search_terms; ?>"</span></h2></small>
-							<?php } ?>
                                 <div class="search-form">
                                     <form action="" method="post">
                                         <div class="input-group">
@@ -48,7 +60,7 @@ href="#"><?php echo search_extract($result->caption, $search_terms); ?></a></h3>
 
 
                                                 <?php else: ?>
-                                                    <p><em>There are no results for your query.</em></p>
+                                                    <p style="margin-top:20px"><em>There are no results, just chicken.</em></p>
                                                     <?php endif ?>
                                                         <?php endif ?>
 

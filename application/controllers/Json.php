@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Json extends Public_Controller {
+class json extends Public_Controller {
 	public function __construct()
 	{
 		parent::__construct();
@@ -11,17 +11,23 @@ class Json extends Public_Controller {
 		$this->load->library(['form_validation','session']);
 	}
 
-	public function gallery()
+	public function jpost()
 	{
 		
-
+		$match = $this->input->get('term');
 		$data = [];
-		$query = $this->db->get('gallery');
+		$query = $this->db->like('title',$match);
+		$query = $this->db->get('content_translations');
+		
+		if ($_GET['term'] !== NULL) {
 		if ($query->num_rows() > 0) {
 			foreach($query->result() as $row) {
 			    $data[] = $row;
 		    }
+		    
 		}
+		}
+	
 
 		header("Access-Control-Allow-Origin: *");
 		header('Content-Type: application/json');

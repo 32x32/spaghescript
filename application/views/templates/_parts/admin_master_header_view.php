@@ -47,10 +47,10 @@ if($this->ion_auth->logged_in()) {
 <nav class="navbar navbar-default navbar-fixed-top am-top-header">
         <div class="container-fluid">
           <div class="navbar-header">
-            <div class="page-title"><span>Dashboard</span></div><a href="#" class="am-toggle-left-sidebar navbar-toggle collapsed"><span class="icon-bar"><span></span><span></span><span></span></span></a><a href="index.php" class="navbar-brand"><b><?php echo $website->title;?></b></a>
+            <div class="page-title"><span>Dashboard</span></div><a href="#" class="am-toggle-left-sidebar navbar-toggle collapsed"><span class="icon-bar"><span></span><span></span><span></span></span></a><a href="index.php" class="navbar-brand" style="margin: 0 20px; font-size:14px"><b><?php echo $website->title;?></b></a>
           </div><a href="#" data-toggle="collapse" data-target="#am-navbar-collapse" class="am-toggle-top-header-menu collapsed"><span class="icon s7-more"></span></a>
           <div id="am-navbar-collapse" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav navbar-right am-user-nav">
+            <ul class="nav navbar-nav navbar-right am-user-nav" style=" margin-right: -38px;">
               <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle"><img src="<?php echo site_url(); ?>public/media/<?php echo $this->ion_auth->user()->row()->pics;?>"> <?php echo $this->ion_auth->user()->row()->first_name;?><span class="angle-down s7-angle-down"></span></a>
                 <ul role="menu" class="dropdown-menu">
                   <li><a href="<?php echo site_url('admin/user/profile');?>">Profile page</a></li>
@@ -71,20 +71,7 @@ if($this->ion_auth->logged_in()) {
              
             </ul>
 
-               <form class="navbar-form carikonten" action="/search" method="post" role="search" style="    background-color: #ef6262;">
-          <div class="input-group" style="float:right">
-            <input type="text" name="q" class="form-control" placeholder="Type here and hit enter..." style="color:#fff">
-            <span class="input-group-btn">
-             <input type="submit" style="display:none"/>
-              <button type="submit" class="btn btn-default" style="font-size:14px">
-
-                <span class="fa fa-search">
-                  <span class="sr-only">Search...</span>
-                </span>
-              </button>
-            </span>
-          </div>
-        </form>
+          
           </div>
         </div>
       </nav>

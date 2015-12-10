@@ -12,17 +12,42 @@
         <link href="//cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css" rel="stylesheet">
         <link href="<?php echo site_url('style/ph1/css/style.css');?>" rel="stylesheet">
         <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="<?php echo site_url('style/ph1/lib/jquery.niftymodals/css/component.css');?>" rel="stylesheet"> 
+        <link href='https://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
         <?php echo $before_head;?>
+<style>
+    @media (min-width: 1200px)
+{
+.container {
+    width: 1090px;
+}
+.am-wrapper {
+    margin: 0;
+    background-color: transparent;
+        min-height: 100%;
+   
+    height: 100%;
+    margin: 0 auto -60px;
+}
+.navbar-default {
+    margin: 0;
+}
+}
+</style>
     </head>
 <!--- block bad isp injection script --->
- <Body>
+<Body>
 
+ 
+  
 
 <div class="am-wrapper">
 <nav class="navbar navbar-default navbar-fixed-top am-top-header">
+  <div class="container menure">
         <div class="container-fluid">
-          <div class="navbar-header">
-            <div class="page-title"><span>Madobox</span></div><a href="index.php" class="navbar-brand"><b><?php echo $website->title;?></b></a>
+          <div class="navbar-header logonya">
+            <div class="page-title"><span><?php echo $website->title;?></span></div><a href="/" class="navbar-brand"><b style="    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 18px;"><?php echo $website->title;?></b></a>
           </div><a href="#" data-toggle="collapse" data-target="#am-navbar-collapse" class="am-toggle-top-header-menu collapsed"><span class="icon s7-more"></span></a>
          
 
@@ -44,12 +69,8 @@
 
             <?php } else { ?>
               
-               <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle">Login <span class="angle-down s7-angle-down"></span></a>
-                <ul role="menu" class="dropdown-menu">
-                  <li><a href="<?php echo site_url('admin');?>">Login</a></li>
-                  <li><a href="<?php echo site_url('admin/signup');?>">Join now</a></li>
-                
-                </ul>
+               <li class="dropdown"><a href="#" data-modal="login-modal" class="md-trigger">Login</a>
+               
               </li>
 
             <?php } ?>  
@@ -62,12 +83,20 @@
               
              
             </ul>
-              <form class="navbar-form carikonten" action="/search" method="post" role="search" style="    background-color: #ef6262;">
+              <form class="navbar-form carikonten" action="/search" method="post" role="search" style="    background-color:#transparent;">
           <div class="input-group" style="float:right">
-            <input type="text" name="q" class="form-control" placeholder="Type here and hit enter..." style="color:#fff">
+            <input type="text"  name="q" class="form-control" placeholder="What do you search for..." style="color:#fff; width: 210px;" id="country" autocomplete="off">
+            <ul class="dropdown-menu txtcountry" style="
+                    border: 0px solid #ccc;
+    border: 0px solid rgba(0,0,0,.15);
+             
+    border-radius: 0px;
+    -webkit-box-shadow: 0 0px 0px rgba(0,0,0,.175);
+            
+            " role="menu" aria-labelledby="dropdownMenu"  id="DropdownCountry"></ul>
             <span class="input-group-btn">
              <input type="submit" style="display:none"/>
-              <button type="submit" class="btn btn-default" style="font-size:14px">
+              <button type="submit" class="btn btn-default" style="font-size:14px;">
 
                 <span class="fa fa-search">
                   <span class="sr-only">Search...</span>
@@ -77,6 +106,7 @@
           </div>
         </form>
           </div>
+    </div>
         </div>
 
 
@@ -91,7 +121,16 @@
 <div>
     <div class="subnav">
       <div class="wrapper" style="    margin-top: 12px;">
+        
+        
+        
+        
+        
+      
+        
        <?php echo $mobi_top_menu;?>
       </div>
+      
 </div>
+
 </div>

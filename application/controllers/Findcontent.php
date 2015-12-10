@@ -74,15 +74,7 @@ class Findcontent extends Public_Controller
         }
         else
         {
-            echo '<HTML>
-<HEAD>
-<TITLE>404 Not Found</TITLE>
-<BODY>
-<H1>Not Found</H1>
-The requested document was not found on this server.
-</BODY>
-</HTML>
-';
+    redirect("/p/notfound");
             exit;
         }
     }

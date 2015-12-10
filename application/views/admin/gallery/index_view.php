@@ -2,7 +2,7 @@
         <div class="main-content">
 
 <div class="row">
-<div align="center"><?=anchor('gallery/add','Add a new image',['class'=>'btn btn-primary'])?></div>
+<div align="center"><?=anchor('/admin/xtension/gallery/add','Add a new image',['class'=>'btn btn-primary'])?></div>
 			<hr />	
 <?php if($images->num_rows() > 0) : ?>
             <!--Responsive table-->
@@ -38,7 +38,7 @@
 				<?php endforeach; ?>
 		
 		<?php else : ?>
-			<div align="center">We don't have any image yet, go ahead and <?=anchor('admin/gallery/add','add a new one')?>.</div>
+			<div align="center">We don't have any image yet, go ahead and <?=anchor('/admin/xtension/gallery/add','add a new one')?>.</div>
 		<?php endif; ?>
                       
                     </tbody>

@@ -3,6 +3,9 @@ Opensource SpagheScript CMS based on CodeIgniter for building an Anime and Manga
 
 > Warning: This script has a lot of bugs, and it is not recommended for using this as production site.
 
+
+Demo: http://myci-pherrykun.c9users.io
+
 ## Copyright and License
 Copyright 2015 Spaghetti-san
 

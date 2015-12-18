@@ -15,7 +15,7 @@
 </style>
 <div class="container">
     
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div id="myCarousel" class="carousel slide box-shadow--2dp" data-ride="carousel">
     
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
@@ -32,23 +32,22 @@
 
 
     	<ul class="nav nav-pills nav-justified">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"><a href="#">Today<small>Ini ini lah</small></a></li>
-          <li data-target="#myCarousel" data-slide-to="1"><a href="#">Projects<small>Lelellele</small></a></li>
-          <li data-target="#myCarousel" data-slide-to="2"><a href="#">Portfolio<small>dsdsdsd</small></a></li>
-          <li data-target="#myCarousel" data-slide-to="3"><a href="#">Services<small>Ntap</small></a></li>
+          <li data-target="#myCarousel" data-slide-to="0" class="active"><a href="#">Today<small>Splash Picture</small></a></li>
+          <li data-target="#myCarousel" data-slide-to="1"><a href="#">This Week<small>Nightcore</small></a></li>
+
         </ul>
 
 
     </div><!-- End Carousel -->
 </div>
- <div class="container">
+ <div class="container" >
        
 
 
 
 
 
-        <div class="panel">
+        <div class="panel box-shadow--2dp">
 					<div class="panel-body" style="     text-align: center;
     padding-top: 15%;
     padding-bottom: 15%;">
